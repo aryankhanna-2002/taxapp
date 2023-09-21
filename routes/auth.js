@@ -7,6 +7,10 @@ const bcrypt = require('bcrypt');
 const saltRounds = 9;
 
 // Login route
+
+router.get("/",(req,res)=>{
+  res.send("im live taxapi (c)aryan khanna")
+})
 router.get('/login', (req, res) => {
   const { username, password } = req.query;
   

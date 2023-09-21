@@ -1,0 +1,64 @@
+
+## Usage
+
+### Online Access
+
+You can access a live version of the TaxApp API online at([Login URL](https://taxapiapp.onrender.com/auth/login?username=final%20test%20&password=test)).
+
+### Postman API Testing
+
+You can use [Postman](https://www.postman.com/) to test the API using the provided collection:
+
+[API Testing Collection](https://www.postman.com/research-geologist-79253613/workspace/new-work/request/28030473-c0257cae-0fce-41af-b630-5f256aa3108a)
+
+The collection includes requests for:
+
+- Registering an accountant
+- Logging in to obtain an authentication token
+- Logging tax transactions by authorized personnel
+- Viewing all taxpayers
+- Checking user-paid and unpaid taxes
+- Checking all taxes for a specific user
+- Making tax payments
+- Retrieving all taxes for all taxpayers
+
+#### Authentication
+
+To access protected endpoints, include the `Authentication: token xyz` header in your Postman requests, replacing `xyz` with the actual authentication token obtained during login.
+
+### Sample Test URL
+
+You can obtain an authentication token by logging in at:
+
+[Login URL](https://taxapiapp.onrender.com/auth/login?username=final%20test%20&password=test)
+
+## Contact
+
+For any inquiries or issues related to the TaxApp API, please contact:
+
+### Local Access (Development)
+
+If you want to run the TaxApp API locally for development or testing purposes, follow these steps:
+
+1. **Clone the Repository**: Start by cloning this Git repository to your local machine using the following command:
+
+   ```bash
+   git clone https://github.com/aryankhanna-2002/taxapp.git
+
+
+   after that just 
+   npm install and node app.js 
+
+Authentication and Security
+The TaxApp API employs strong security measures, including:
+
+Password Hashing: User passwords are securely hashed and salted using bcrypt to ensure the confidentiality of user data.
+
+Token-Based Authorization: To access protected endpoints, include the Authentication: token xyz header in your Postman requests, replacing xyz with the actual authentication token obtained during login.
+
+Note
+The reason for not providing a Docker image is due to an issue related to a C++ code dependency in the bcrypt package. Creating a Docker image with this issue is problematic. If you encounter any issues while setting up the application locally, please feel free to contact me for assistance.
+
+
+Aryan Khanna
+Email: aryanarikhanna111@gmail.com
