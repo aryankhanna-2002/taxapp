@@ -2,9 +2,9 @@
   "name": "node_tax",
   "version": "1.0.0",
   "description": "project tax ",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "aryan khanna",
   "license": "ISC",
@@ -19,5 +19,6 @@
   "devDependencies": {
     "mocha": "^10.2.0",
     "supertest": "^6.3.3"
-  }
+  },
+  "keywords": []
 }

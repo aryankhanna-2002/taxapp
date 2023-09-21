@@ -1,0 +1,30 @@
+version: '3.9'
+
+services:
+  # Mongo DB service
+  mongo_db:
+    image: mongo:latest
+    environment:
+      PORT: 3000
+      MONGO_URI: mongodb://mongo_db:27017
+      SECRET_KEY: your_secret_key
+      DB_NAME: taxapp
+      NAME: Aryan khanna
+    ports:
+      - 27017:27017 # Corrected the indentation here
+    restart: always
+    volumes: 
+      - data:/data/db
+
+  # Node.js API service
+  api:
+    build: .
+    ports:
+      - '3001:3000'
+    depends_on:
+      - mongo_db
+    volumes:
+      - .:/usr/src/app # Corrected the indentation here
+
+volumes:
+  data: {} # This defines the 'data' volume used by the 'mongo_db' service

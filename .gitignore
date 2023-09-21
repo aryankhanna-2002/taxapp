@@ -1,0 +1,35 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+
+# IDE and text editor files
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Dependency directories
+.pnpm/
+node_modules/
+bower_components/
+
+# Output of 'npm pack'
+*.tgz
+
+# macOS
+.DS_Store
+
+# MongoDB
+/data/db
